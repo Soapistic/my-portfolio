@@ -8,7 +8,7 @@ import { PenIcon, PlaneIcon } from "lucide-react";
 export function ProjectSection() {
   return (
     <div className="h-screen max-w-4xl mx-auto" id="projects">
-      <h1 className="text-4xl font-bold mb-8">Featured Projects</h1>
+      <h1 className="text-4xl font-bold mb-8">Mes Projets Phares</h1>
       <BentoGrid className=" md:auto-rows-[20rem]">
         {items.map((item, i) => (
           <BentoGridItem
@@ -43,7 +43,8 @@ const items = [
     title: "CINQ CINQ",
     description: (
       <span className="text-sm">
-        An LMS platform for online courses and training. Built using React/Next.js.
+        Plateforme d&apos;apprentissage en ligne avec cours interactifs et
+        vidéos.
       </span>
     ),
     header: <SkeletonThree img="./cinqcinq.png" />,
@@ -55,7 +56,7 @@ const items = [
     title: "Facade Atelier",
     description: (
       <span className="text-sm">
-        A modern website with React/Next.js for an architecture firm.
+        Site web moderne avec React/Next.js pour un atelier d&apos;architecture.
       </span>
     ),
     header: <SkeletonThree img="./facadeatelier.png" />,
@@ -67,7 +68,7 @@ const items = [
     title: "ABLAviation",
     description: (
       <span className="text-sm">
-        Website for an aviation company using React/Next.js.
+        Site web pour une compagnie de leasing d&apos;avion.
       </span>
     ),
     header: <SkeletonThree img="./ablaviation.png" />,
@@ -79,7 +80,7 @@ const items = [
     title: "ARCH-INOV",
     description: (
       <span className="text-sm">
-        A modern website with React/Next.js for an architecture firm.
+        Site web moderne avec React/Next.js pour un atelier d&apos;architecture.
       </span>
     ),
     header: <SkeletonThree img="./archinov.png" />,
@@ -91,7 +92,7 @@ const items = [
     title: "SwiftCore",
     description: (
       <span className="text-sm">
-        Project management software for agile teams.
+        Logiciel de gestion de projets pour équipes agiles.
       </span>
     ),
     header: <SkeletonThree img="./swiftcore.png" />,
