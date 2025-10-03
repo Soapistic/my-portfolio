@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { ReactNode, useLayoutEffect, useRef, useCallback } from 'react';
 import Lenis from 'lenis';
@@ -105,7 +106,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
 
     isUpdatingRef.current = true;
 
-    const { scrollTop, containerHeight, scrollContainer } = getScrollData();
+    const { scrollTop, containerHeight } = getScrollData();
     const stackPositionPx = parsePercentage(stackPosition, containerHeight);
     const scaleEndPositionPx = parsePercentage(scaleEndPosition, containerHeight);
 
