@@ -8,6 +8,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { ProjectSection } from "./components/ProjectSection";
+import Header from "./components/Header";
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -26,6 +27,8 @@ const techLogos = [
 
 export default function Home() {
   return (
+    <>
+    <Header />
     <div className="min-h-screen px-4">
       <section className="max-w-6xl mx-auto flex flex-col items-center justify-center h-screen">
         <h1 className="text-5xl md:text-7xl py-6 font-bold tracking-tighter text-center bg-clip-text">
@@ -59,5 +62,6 @@ export default function Home() {
       </section>
       <ProjectSection />
     </div>
+    </>
   );
 }

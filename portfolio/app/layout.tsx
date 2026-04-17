@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
 import LightRays from "@/components/LightRays";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,7 +32,6 @@ export default function RootLayout({
             className="custom-rays"
           />
         </div>
-        <Header />
         <main>{children}</main>
       </body>
     </html>
